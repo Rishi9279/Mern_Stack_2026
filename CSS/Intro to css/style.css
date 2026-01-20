@@ -1,3 +1,22 @@
 h1{
     color: rgb(6, 220, 216) ;
 }
+h2{
+    color: rgb(255, 165, 0);
+}
+body{
+    background-color: rgb(34, 34, 34);
+}
+p{
+    color: rgb(217, 110, 110);
+}
+
+em{
+    color: rgb(255, 0, 0);
+}
+strong{
+    color: rgb(0, 255, 0);
+}
+ footer h3{
+    color: rgb(255, 255, 0);
+ }
