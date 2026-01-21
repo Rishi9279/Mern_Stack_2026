@@ -1,22 +1,37 @@
-h1{
-    color: rgb(6, 220, 216) ;
-}
-h2{
-    color: rgb(255, 165, 0);
-}
 body{
-    background-color: rgb(34, 34, 34);
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+h1{
+    color: #333;
+    text-align: center;
+    margin-top: 20px;
 }
 p{
-    color: rgb(217, 110, 110);
+    color: #666;
+    line-height: 1.6;
+    margin: 20px;
+    text-align: center;
 }
-
-em{
-    color: rgb(255, 0, 0);
+h2{
+    color: #444;
+    margin-top: 30px;
+    text-align: center;
 }
-strong{
-    color: rgb(0, 255, 0);
+h3{
+    color: #555;
+    margin-top: 20px;
+    text-align: center;
 }
- footer h3{
-    color: rgb(255, 255, 0);
- }
+ strong{
+    color: #aa1a1a;
+    text-align: center;
+    font-weight: bold;
+}
+ em{
+    color: #1a1aaa;
+    text-align: center;
+    font-style: italic;
+}
