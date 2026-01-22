@@ -1,0 +1,424 @@
+/* ===========================
+   CSS BASICS TUTORIAL
+   =========================== */
+
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 1. BASIC SELECTORS */
+
+/* Element selector - targets all p tags */
+p {
+    line-height: 1.6;
+}
+
+/* Class selector - targets elements with class "highlight" */
+.highlight {
+    background-color: yellow;
+    padding: 5px 10px;
+}
+
+/* ID selector - targets element with id "unique-id" (use sparingly) */
+#unique-id {
+    background-color: lightblue;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+
+/* Attribute selector */
+input[type="text"] {
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+}
+
+/* ===========================
+   2. BOX MODEL
+   =========================== */
+/* margin (outside) > border > padding > content */
+
+.box {
+    width: 200px;
+    background-color: #ff6b6b;
+    color: white;
+    
+    /* Content area */
+    padding: 20px;           /* Space inside, between content and border */
+    
+    /* Border */
+    border: 3px solid #333;  /* Border around the box */
+    
+    /* Margin */
+    margin: 20px;            /* Space outside the border */
+}
+
+.box p {
+    margin: 0;
+}
+
+.explanation {
+    font-size: 12px;
+    color: #666;
+    font-style: italic;
+}
+
+/* ===========================
+   3. DISPLAY PROPERTIES
+   =========================== */
+
+.display-section {
+    padding: 20px;
+    background-color: #f5f5f5;
+}
+
+/* Block - takes full available width */
+.block-item {
+    display: block;
+    background-color: #3498db;
+    color: white;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+/* Inline - only takes as much width as necessary */
+.inline-item {
+    display: inline;
+    background-color: #2ecc71;
+    color: white;
+    padding: 5px 10px;
+    margin: 0 5px;
+}
+
+/* Inline-block - inline but respects width/height */
+.inline-block-item {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    background-color: #9b59b6;
+    color: white;
+    text-align: center;
+    line-height: 100px;
+    margin: 10px 5px;
+    border-radius: 5px;
+}
+
+/* ===========================
+   4. FLEXBOX LAYOUT
+   =========================== */
+
+.flex-container {
+    display: flex;
+    justify-content: space-around;    /* Distribute items evenly */
+    align-items: center;              /* Center items vertically */
+    gap: 10px;                        /* Space between items */
+    padding: 20px;
+    background-color: #ecf0f1;
+    height: 150px;
+}
+
+.flex-item {
+    flex: 1;                          /* Equal width for all items */
+    background-color: #e74c3c;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+/* ===========================
+   5. CSS GRID
+   =========================== */
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);   /* 3 equal columns */
+    gap: 15px;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+.grid-item {
+    background-color: #16a085;
+    color: white;
+    padding: 30px;
+    text-align: center;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+/* ===========================
+   6. POSITIONING
+   =========================== */
+
+.position-relative {
+    position: relative;
+    background-color: #ddd;
+    padding: 20px;
+    height: 200px;
+    margin: 20px;
+}
+
+.position-absolute {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    background-color: #f39c12;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.position-fixed {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #c0392b;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 5px;
+    z-index: 100;
+    display: none;  /* Comment this to see the fixed element */
+}
+
+/* ===========================
+   7. TEXT & FONTS
+   =========================== */
+
+.font-size-demo {
+    font-size: 24px;
+    font-family: Arial, sans-serif;
+}
+
+.font-weight-demo {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.text-align-demo {
+    text-align: center;
+    font-size: 16px;
+    margin: 20px 0;
+}
+
+.text-decoration-demo {
+    text-decoration: underline;
+    text-decoration-color: red;
+    font-size: 16px;
+}
+
+/* ===========================
+   8. COLORS & BACKGROUNDS
+   =========================== */
+
+.bg-color {
+    background-color: #3498db;
+    color: white;
+    padding: 20px;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+
+.bg-gradient {
+    background: linear-gradient(to right, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 20px;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+
+.text-color {
+    color: #2c3e50;
+    font-weight: bold;
+}
+
+/* ===========================
+   9. BORDERS & SHADOWS
+   =========================== */
+
+.border-demo {
+    border: 2px solid #333;
+    padding: 15px;
+    margin: 10px 0;
+}
+
+.rounded-border {
+    border: 3px solid #e74c3c;
+    border-radius: 15px;           /* Rounded corners */
+    padding: 15px;
+    margin: 10px 0;
+}
+
+.box-shadow-demo {
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);  /* x, y, blur, color */
+    padding: 20px;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+
+/* ===========================
+   10. PSEUDO-CLASSES & PSEUDO-ELEMENTS
+   =========================== */
+
+.link-demo {
+    color: #3498db;
+    text-decoration: none;
+    padding: 10px 20px;
+    border: 2px solid #3498db;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    display: inline-block;
+    margin: 10px 0;
+}
+
+/* Pseudo-class: :hover */
+.link-demo:hover {
+    background-color: #3498db;
+    color: white;
+    transform: translateY(-2px);
+}
+
+/* Pseudo-class: :active */
+.link-demo:active {
+    transform: translateY(0);
+}
+
+/* Pseudo-element: ::first-line */
+.first-line-demo::first-line {
+    font-weight: bold;
+    color: #e74c3c;
+}
+
+/* ===========================
+   11. TRANSITIONS & ANIMATIONS
+   =========================== */
+
+.transition-demo {
+    background-color: #3498db;
+    color: white;
+    padding: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;  /* Smooth transition over 0.3s */
+    margin: 10px 0;
+}
+
+.transition-demo:hover {
+    background-color: #2980b9;
+    transform: scale(1.05);      /* Scale up slightly */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Animation keyframes */
+@keyframes slideIn {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+.animation-demo {
+    background-color: #f39c12;
+    color: white;
+    padding: 20px;
+    border-radius: 5px;
+    animation: bounce 1s infinite;  /* Apply animation */
+    margin: 10px 0;
+}
+
+/* ===========================
+   12. RESPONSIVE DESIGN
+   =========================== */
+
+.responsive-text {
+    font-size: 18px;
+}
+
+.responsive-box {
+    background-color: #16a085;
+    color: white;
+    padding: 20px;
+    margin: 10px 0;
+    border-radius: 5px;
+    width: 100%;
+}
+
+/* Media queries - change styles based on screen size */
+@media (max-width: 768px) {
+    .responsive-text {
+        font-size: 14px;
+    }
+    
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);  /* 2 columns on tablet */
+    }
+    
+    .flex-container {
+        flex-direction: column;  /* Stack vertically on mobile */
+    }
+}
+
+@media (max-width: 480px) {
+    .responsive-text {
+        font-size: 12px;
+    }
+    
+    .grid-container {
+        grid-template-columns: 1fr;  /* 1 column on mobile */
+    }
+    
+    .inline-block-item {
+        width: 80px;
+        height: 80px;
+        line-height: 80px;
+    }
+}
+
+/* ===========================
+   SECTION STYLES
+   =========================== */
+
+div[class$="-section"] {
+    padding: 30px;
+    margin: 20px;
+    background-color: #fff;
+    border-left: 4px solid #3498db;
+    border-radius: 5px;
+}
+
+h2 {
+    color: #2c3e50;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+h3 {
+    color: #34495e;
+    margin: 15px 0 10px 0;
+    font-size: 18px;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #ecf0f1;
+    color: #2c3e50;
+    line-height: 1.6;
+}
