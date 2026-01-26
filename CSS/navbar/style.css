@@ -15,7 +15,7 @@ body{
     align-items: center;
     justify-content: space-between;
     padding: 20px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.4);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
 .navbar .icon{
     font-size: 24px;
@@ -31,4 +31,35 @@ body{
     text-decoration: none;
     color: #333;
     font-size: 18px;
+}
+.navbar .list li a:hover{
+    color: #007BFF;
+}
+.hero{
+   display: flex;
+   gap: 20px;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   color: #fff;
+  height: 80vh;
+}
+.hero h1{
+    font-size: 48px;
+}
+.hero p{
+    font-size: 24px;
+}
+.hero button{
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    background-color: #78a6d7;
+    color: #fff;
+    cursor: pointer;
+    margin-top: 20px;
+}
+.hero button:hover{
+    background-color: #5591c1;
 }
