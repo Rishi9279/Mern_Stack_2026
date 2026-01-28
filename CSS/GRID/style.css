@@ -1,0 +1,30 @@
+.container {
+  display: grid;
+  border: 2px solid black;
+  padding: 16px;
+}
+/* .container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+} */
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 16px;
+}
+
+.item {
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+}
+.item:nth-child(odd) {
+  background: lightcoral;
+}
+.item:nth-child(even) {
+  background: lightseagreen;
+}
