@@ -1,0 +1,27 @@
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  border: 2px solid black;
+}
+
+.item {
+ flex-basis: 20%;
+  background: lightblue;
+  margin: 5px;
+  height: 100px;
+}
+
+.item:nth-child(1) {
+  background: lightyellow;
+  flex-grow: 1;
+}
+
+.item:nth-child(2) {
+  background: lightgreen;
+  flex-grow: 2;
+}
+.item:nth-child(3) {
+  background: lightcoral;
+  flex-grow: 3;
+}
+
