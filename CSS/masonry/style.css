@@ -23,7 +23,7 @@ body {
 
 .item {
   overflow: hidden;
-  border-radius: 8px;
+  border-radius: 10px;
   grid-row: span 30;
 }
 
