@@ -26,6 +26,10 @@ body {
 /* mapping */
 .header {
   grid-area: header;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: rgb(235, 217, 184);
   display: flex;
   justify-content: space-between;
   align-items: center;
