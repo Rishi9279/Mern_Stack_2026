@@ -1,0 +1,226 @@
+/* -------------------- RESET -------------------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* -------------------- BASE SYSTEM -------------------- */
+html {
+  font-size: 62.5%; /* rem math easy (1rem = 10px) */
+}
+
+body {
+  /* font-size: clamp(1.4rem, 2.5vw, 1.6rem); */
+  /* line-height: 1.6; */
+  /* background: #171619; */
+  color: #d1d5db;
+}
+
+/* -------------------- LAYOUT -------------------- */
+.pages {
+  display: grid;
+  grid-template-areas:
+    "header"
+    "hero"
+    "client-transformation";
+}
+
+/* -------------------- HEADER -------------------- */
+.header {
+  grid-area: header;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(rgb(24, 24, 27), rgb(0, 0, 0));
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.header .logo {
+  font-size: clamp(1.9rem, 3vw, 2.4rem);
+  font-weight: 600;
+  letter-spacing: 0.1rem;
+  cursor: pointer;
+  color: #fff;
+}
+
+.logo span {
+  color: #f97316;
+}
+
+/* -------------------- NAVBAR -------------------- */
+.header nav .nav-list {
+  display: none;
+  list-style: none;
+  gap: 2rem;
+}
+
+.header nav .nav-list a {
+  font-size: clamp(1rem, 3vw, 1.5rem);
+  text-decoration: none;
+  color: #d1d5db;
+  padding: 0.8rem 1.5rem;
+  border-radius: 2.5rem;
+  transition: background 0.3s ease;
+}
+
+.header nav .nav-list a:hover {
+  background: #374151;
+}
+
+/* -------------------- MENU ICON -------------------- */
+.menu-icon {
+  font-size: clamp(1.9rem, 3vw, 2rem);
+  cursor: pointer;
+  color: #fff;
+}
+
+/* -------------------- HERO -------------------- */
+.hero {
+  grid-area: hero;
+  height: 100vh;
+  padding: 0 2rem;
+  display: flex;
+  background: linear-gradient(to right bottom, rgb(14, 14, 14), rgb(26, 26, 26), rgb(14, 14, 14));
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* Main heading */
+.hero h1 {
+  font-size: clamp(2.5rem, 5vw, 4.5rem);
+  background: linear-gradient(to right, rgb(250, 204, 21), rgb(239, 68, 68));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero-wrap {
+  display: flex;
+  gap: 1rem;
+}
+
+/* build muscles / burn fat */
+.hero h2,
+.hero h3 {
+  font-size: clamp(2.5rem, 4vw, 4.5rem);
+}
+
+.hero h2 {
+  color: #ffffff;
+}
+
+.hero h3 {
+  background: linear-gradient(to right, rgb(239, 68, 68), rgb(251, 146, 60));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Paragraphs */
+.hero p {
+  font-size: clamp(1.6rem, 2.5vw, 2rem);
+}
+
+.hero .hero-para {
+  max-width: 450px;
+  font-size: clamp(1.5rem, 2.2vw, 1.8rem);
+}
+
+.hero .hero-para span {
+  color: #fff;
+  font-weight: 600;
+  border-bottom: 0.2rem solid #eab30a;
+}
+
+.hero .hero-para .bold {
+  border: none;
+}
+
+/* -------------------- BUTTON -------------------- */
+.hero-btn {
+  margin-top: 1.5rem;
+  padding: 1.1rem 2.2rem;
+  font-size: clamp(1.5rem, 2.5vw, 1.6rem);
+  background: #ea580c;
+  color: #fff;
+  border: none;
+  border-radius: 2.5rem;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.hero-btn:hover {
+  background: #ba4026;
+}
+
+.client-transformation {
+  grid-area: client-transformation;
+  background: #101729;
+  text-align: center;
+  padding: 2.5rem 2rem;
+}
+.client-transformation h2 {
+  text-align: center;
+  margin-bottom: 3rem;
+  font-size: clamp(2rem, 5vw, 3.5rem);
+}
+.client-transformation h2 span {
+  color: #F97315;
+  text-shadow:
+    0 0 3px #ff9800;
+}
+.client-transformation p{
+    margin: 3.5rem 0;
+    color: #d1d5db;
+    font-size: clamp(1.2rem,3vw, 1.3rem);
+}
+
+.client-img {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: 1fr;
+}
+.client-img img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.card {
+  border-radius: 10px;
+  background: #000000;
+  padding: 3rem 0;
+  height: 350px;
+  transition: transform 0.3s ease;
+}
+.card:hover {
+  transform: scale(1.04);
+}
+
+/* -------------------- DESKTOP LAYOUT ONLY -------------------- */
+@media (min-width: 768px) {
+  .header {
+    padding: 2rem 5rem;
+  }
+
+  .header nav .nav-list {
+    display: flex;
+  }
+
+  .menu-icon {
+    display: none;
+  }
+  .client-transformation {
+    padding: 3.5rem 8rem;
+  }
+  .client-img {
+    display: grid;
+    gap: 2.2rem;
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
