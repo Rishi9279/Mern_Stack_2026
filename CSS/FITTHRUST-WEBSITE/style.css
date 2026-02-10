@@ -24,7 +24,8 @@ body {
   grid-template-areas:
     "header"
     "hero"
-    "client-transformation";
+    "client-transformation"
+    "programs";
 }
 
 /* -------------------- HEADER -------------------- */
@@ -171,14 +172,13 @@ body {
   font-size: clamp(2rem, 5vw, 3.5rem);
 }
 .client-transformation h2 span {
-  color: #F97315;
-  text-shadow:
-    0 0 3px #ff9800;
+  color: #f97315;
+  text-shadow: 0 0 3px #ff9800;
 }
-.client-transformation p{
-    margin: 3.5rem 0;
-    color: #d1d5db;
-    font-size: clamp(1.2rem,3vw, 1.3rem);
+.client-transformation p {
+  margin: 3.5rem 0;
+  color: #d1d5db;
+  font-size: clamp(1.2rem, 3vw, 1.3rem);
 }
 
 .client-img {
@@ -202,6 +202,59 @@ body {
   transform: scale(1.04);
 }
 
+.programs {
+  grid-area: programs;
+  background: #17181b;
+  padding: 3rem 2rem;
+}
+.program-card {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: 1fr;
+}
+
+.p-card {
+  height: 380px;
+  background: #27272a;
+  border-radius: 15px;
+}
+
+.p-card .space {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.p-card .space h3 {
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  padding-left: 1rem;
+}
+.p-card .space p{
+  font-size: clamp(1.1rem,2vw, 1.4rem);
+}
+.p-card .space ul {
+  padding-left: 1rem;
+}
+.p-card .space ul li{
+  color: #9DA3AF;
+  line-height: 1.7;
+  font-size: clamp(1.1rem,2vw, 1.4rem);
+}
+.p-card .space a{
+  text-decoration: none;
+  color: #ea580c;
+  font-size: clamp(1.1rem,2vw, 1.6rem);
+}
+
+
+
+.p-card img {
+  width: 100%;
+  border-radius: 15px;
+  height: 50%;
+  object-fit: cover;
+}
+
 /* -------------------- DESKTOP LAYOUT ONLY -------------------- */
 @media (min-width: 768px) {
   .header {
@@ -222,5 +275,16 @@ body {
     display: grid;
     gap: 2.2rem;
     grid-template-columns: repeat(4, 1fr);
+  }
+  .programs {
+    padding: 8rem 5rem;
+  }
+
+  .program-card {
+    gap: 3rem;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .p-card{
+    height: 450px;
   }
 }
