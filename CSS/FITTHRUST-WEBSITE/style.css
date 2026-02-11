@@ -207,6 +207,11 @@ body {
   background: #17181b;
   padding: 3rem 2rem;
 }
+.programs h2,
+p {
+  text-align: center;
+  margin: 2rem 0;
+}
 .program-card {
   display: grid;
   gap: 2rem;
@@ -229,24 +234,22 @@ body {
   font-size: clamp(1.5rem, 3vw, 2rem);
   padding-left: 1rem;
 }
-.p-card .space p{
-  font-size: clamp(1.1rem,2vw, 1.4rem);
+.p-card .space p {
+  font-size: clamp(1.1rem, 2vw, 1.4rem);
 }
 .p-card .space ul {
   padding-left: 1rem;
 }
-.p-card .space ul li{
-  color: #9DA3AF;
+.p-card .space ul li {
+  color: #9da3af;
   line-height: 1.7;
-  font-size: clamp(1.1rem,2vw, 1.4rem);
+  font-size: clamp(1.1rem, 2vw, 1.4rem);
 }
-.p-card .space a{
+.p-card .space a {
   text-decoration: none;
   color: #ea580c;
-  font-size: clamp(1.1rem,2vw, 1.6rem);
+  font-size: clamp(1.1rem, 2vw, 1.6rem);
 }
-
-
 
 .p-card img {
   width: 100%;
@@ -284,7 +287,7 @@ body {
     gap: 3rem;
     grid-template-columns: repeat(3, 1fr);
   }
-  .p-card{
+  .p-card {
     height: 450px;
   }
 }
