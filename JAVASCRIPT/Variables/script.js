@@ -11,3 +11,6 @@ function outer() {
 }
 
 outer();
+
+console.log(false ?? "Hi");
+console.log(false || "Hi");
