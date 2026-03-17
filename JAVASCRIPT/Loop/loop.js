@@ -52,3 +52,17 @@ arr5.forEach((value) => {
     console.log(value);
   }
 });
+
+let array = [1, 2, 3];
+let result = [];
+
+array.forEach((value) => {
+  result.push(value * 2);
+});
+console.log(result);
+
+
+let array1 = [1, 2, 3];
+array1.forEach((value) => {
+  console.log(value * 2);
+});
