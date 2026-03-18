@@ -153,5 +153,30 @@ let users3 = [
 let uppercase = users3.filter((value) => value.age > 18).map((value) => value.name.toUpperCase());
 console.log(uppercase);
 
+// {
+//   totalPrice: 71500,
+//   items: {
+//     Laptop: 1,
+//     Mouse: 3,
+//     Phone: 1
+//   }
+// }
+let cart1 = [
+  { name: "Laptop", price: 50000, quantity: 1 },
+  { name: "Mouse", price: 500, quantity: 2 },
+  { name: "Phone", price: 20000, quantity: 1 },
+  { name: "Mouse", price: 500, quantity: 1 },
+];
 
-
+let totalItem = cart1.reduce(
+  (acc, value) => {
+    return acc + value.price * value.quantity;
+  },
+  {
+    totalPrice: {},
+    item: {
+      key: value,
+    },
+  },
+);
+console.log(totalItem);
