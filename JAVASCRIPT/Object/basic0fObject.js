@@ -64,3 +64,39 @@ let newArr = users.map((user) => {
   return { name: user.name, city: user.address.city };
 });
 console.log(newArr);
+
+
+let user1 = {
+  name: "Rishi",
+  age: 22,
+  city: "Patna",
+};
+// name Rishi  
+// age 22  
+// city Patna  
+
+for (const key in user1) {
+ console.log(key, user1[key]);
+ 
+}
+Object.entries(user1).forEach(([key, value]) => {
+  console.log(key, value);
+});
+
+//  ["name", "age", "city"]
+let key1 = Object.keys(user1)
+console.log(key1);
+
+//  ["Rishi", 22, "Patna"]
+let value1 = Object.values(user1)
+console.log(value1);
+
+
+let user2 = [
+  { name: "Rishi", age: 22 },
+  { name: "Aman", age: 18 },
+];
+//  ["Rishi - 22", "Aman - 18"]
+
+let userAge = user2.map(user => `${user.name} - ${user.age}`)
+console.log(userAge);
