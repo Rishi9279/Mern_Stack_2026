@@ -15,6 +15,7 @@ let answer = prices1
   });
 console.log(answer);
 
+
 // 👉 Step 1: Keep only users with age >= 18
 // 👉 Step 2: Return only their names
 let users = [
@@ -25,5 +26,3 @@ let users = [
 
 let userName = users.filter((value) => value.age >= 18).map((value) => value.name);
 console.log(userName);
-
-
