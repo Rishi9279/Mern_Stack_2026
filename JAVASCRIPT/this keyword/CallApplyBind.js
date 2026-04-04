@@ -31,9 +31,10 @@ fn();
 const user3 = {
   name: "Rishi",
   greet() {
-    console.log(this.name);
+    console.log(this.name); // Rishi
   },
 };
 
 const fn1 = user3.greet;
 fn1.call(user3);
+
