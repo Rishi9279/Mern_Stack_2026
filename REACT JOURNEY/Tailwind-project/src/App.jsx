@@ -1,13 +1,23 @@
-import Section1 from './components/section-1/Section1'
-import Section2 from './components/section-2/Section2'
+import HomeHero from "./sections/HomeHero";
+import CategoriesSection from "./sections/CategoriesSection";
+import FeaturedProducts from "./sections/FeaturedProducts";
+import BrandSection from "./sections/BrandSection";
+import TestimonialSection from "./sections/TestimonialSection";
+import NewsLetterSection from "./sections/NewsLetterSection";
+import FooterSection from "./sections/FooterSection";
 
 const App = () => {
   return (
     <div>
-    <Section1/>
-    <Section2/>
+      <HomeHero />
+      <CategoriesSection />
+      <FeaturedProducts />
+      <BrandSection />
+      <TestimonialSection />
+      <NewsLetterSection />
+      <FooterSection/>
     </div>
-  )
-}
+  );
+};
 
-export default App
+export default App;

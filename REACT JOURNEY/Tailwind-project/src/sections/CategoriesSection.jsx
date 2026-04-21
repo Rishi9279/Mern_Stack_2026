@@ -1,6 +1,6 @@
-import Categories from "./Categories";
+import CategoryCard from "../components/CategoryCard";
 
-const Section2 = () => {
+const CategoriesSection = () => {
   const categories = [
     {
       id: 1,
@@ -33,25 +33,21 @@ const Section2 = () => {
   ];
 
   return (
-    <section className="px-10 py-14">
+    <section className="px-10 py-12">
       <div className="mb-10 flex flex-col gap-3 text-center">
-        <h1 className="text-2xl font-bold text-gray-800">
-          Explore Our Categories
-        </h1>
+        <h1 className="text-2xl font-bold text-gray-800">Explore Our Categories</h1>
         <p className="mx-auto max-w-xl text-[11px] font-semibold text-gray-500">
-          Discover a wide range of products across various categories. From
-          electronics to fashion, home essentials to beauty products, we have
-          something for everyone.
+          Discover a wide range of products across various categories. From electronics to fashion, home essentials to beauty products, we have something for everyone.
         </p>
       </div>
 
       <div className="grid gap-7 sm:grid-cols-2 lg:grid-cols-4">
         {categories.map((category) => (
-          <Categories key={category.id} {...category} />
+          <CategoryCard key={category.id} {...category} />
         ))}
       </div>
     </section>
   );
 };
 
-export default Section2;
+export default CategoriesSection;

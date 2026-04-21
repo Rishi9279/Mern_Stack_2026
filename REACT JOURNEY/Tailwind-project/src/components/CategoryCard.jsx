@@ -1,4 +1,4 @@
-const Categories = ({ image, title, items, buttonText }) => {
+const CategoryCard = ({ image, title, items, buttonText }) => {
   return (
     <div className="overflow-hidden rounded-2xl bg-white shadow-sm">
       <div className="relative">
@@ -15,4 +15,4 @@ const Categories = ({ image, title, items, buttonText }) => {
   );
 };
 
-export default Categories;
+export default CategoryCard;
