@@ -172,11 +172,14 @@ const App = () => {
       showDivider: true,
     },
   ];
+
+  const cardData = data.map((item) => {
+    return <Card key={item.id} {...item} />;
+  });
   return (
     <div className="container">
-      {data.map((item) => {
-        return <Card key={item.id} {...item} />;
-      })}
+      {cardData}
+      {cardData}
     </div>
   );
 };
